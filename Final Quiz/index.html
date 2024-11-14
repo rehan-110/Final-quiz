@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Todo Login</title>
+  <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-auth.js"></script>
+
+  
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <input type="checkbox" id="check">
+    <div class="login form">
+      <header>Login</header>
+      <form action="#">
+        <input id="email1" type="email" placeholder="Enter your email">
+        <input id="password1" type="text" placeholder="Enter your password">
+        
+        <input type="button" onclick="Login()" class="button" value="Login">
+      </form>
+      <div class="signup">
+        <span class="signup">Don't have an account?
+         <label  for="check">Signup</label>
+        </span>
+      </div>
+    </div>
+    <div class="registration form">
+      <header>Signup</header>
+      <form action="#">
+        <input id="name" type="text" placeholder="Enter your Name">
+        <input id="email" type="email" placeholder="Enter your email">
+        <input id="password" type="text" placeholder="Create a password">
+        
+        <input type="button" onclick="signUp()" class="button" value="Sign Up">
+      </form>
+      <div class="signup">
+        <span class="signup">Already have an account?
+         <label  for="check">Login</label>
+        </span>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <script src="indexauth.js"></script>
+</body>
+</html>
